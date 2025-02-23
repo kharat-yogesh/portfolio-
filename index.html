@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body {
+            background-color: rgb(4, 32, 49);
+            color: white;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: rgb(4, 32, 49);
+            color: white;
+            padding: 10px 20px;
+            /* position: fixed; */
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        #nav1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #ul1 {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #li1 {
+            font-size: 18px;
+            margin: 0 10px;
+            padding: 5px;
+        }
+
+        #li1:hover {
+            border: 2px solid rgb(241, 7, 241);
+            border-radius: 20px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #main-1, #main-2, #main-3, #main4 {
+            padding: 20px;
+        }
+
+        #main-1, #main-2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        #image-box, #image-box-1 {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            border: 2px solid rgb(128, 128, 128);
+            box-shadow: 7px 3px 7px aqua;
+            margin-top: 20px;
+        }
+
+        #intro, #intro-1 {
+            margin-top: 20px;
+        }
+
+        #service {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        #main-3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #box1, #box2, #box3, #box4, #box5, #box6 {
+            background-color: rgb(53, 52, 52);
+            border: 2px solid black;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 80%;
+        }
+
+        #mywork {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #main4 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #inputq {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        #username, #email1, #hu {
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 20px;
+            background-color: rgb(134, 133, 133);
+            border: none;
+        }
+        #dow{
+     margin-top: 39px;
+    margin-left: 90px;
+    border: 2px solid black;
+    height: 30px;
+    width: 130px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: red;
+}
+/* #username,#email1 {
+    margin-top: 20px;
+    margin-left: 49px;
+    font-size: 30px;
+    width: 600px;
+    border-radius: 20px;
+    background-color: rgb(134, 133, 133);
+} */
+
+        #button1 {
+            background-color: red;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            color: white;
+            cursor: pointer;
+          
+        }
+
+        @media (min-width: 768px) {
+            #main-1, #main-2 {
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            #image-box, #image-box-1 {
+                height: 300px;
+                width: 300px;
+            }
+
+            #main-3 {
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            #box1, #box2, #box3, #box4, #box5, #box6 {
+                width: 30%;
+            }
+
+            #mywork {
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            #main4 {
+                flex-direction: row;
+                justify-content: space-around;
+                height: 300px;
+            }
+        }
+        #y1
+{
+list-style: none;
+margin-right: 20px;
+color: rgb(228, 231, 231);
+}
+#y2{
+    list-style: none;
+margin-right: 20px;
+color: blue;
+}
+#y3
+{
+list-style: none;
+margin-right: 20px;
+color: blue;
+}
+
+#y4{
+    list-style: none;
+margin-right: 20px;
+color:purple;
+}
+
+#y5{
+    list-style: none;
+    margin-right: 20px;
+    color: red;
+}
+#iconsf{
+    margin-left:60px;
+    margin-top: 20px;
+    font-size: 30px;
+    display: flex;
+   
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="nav1">
+            <h1>YOGESH...</h1>
+            <ul id="ul1">
+                <li id="li1" class="bi bi-house"><a href="#home"> Home</a></li>
+                <li id="li1" class="bi bi-browser-edge"><a href="#About"> About me</a></li>
+                <li id="li1" class="bi bi-person-walking"><a href="#service1"> servies</a></li>
+                <li id="li1" class="bi bi-person-circle"><a href="#my-work"> my work</a></li>
+                <li id="li1" class="bi bi-person-circle"><a href="#Contact"> Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div id="main-1">
+        <div id="intro">
+            <span id="hi">
+                <h1> Hi, i am Yogesh Kharat <br> frome Ahilya nagar maharashtra</h1>
+            </span>
+        </div>
+        <img id="image-box" src="../image/my-photo.jpg" alt="my photo">
+    </div>
+    <div id="main-2">
+        <!-- <img id="image-box-1" src="../image/my-photo.jpg" alt="my photo"> -->
+        <div id="intro-1">
+            <h1 id="About">About me</h1>
+            <p id="p1"> <b>A fresh-faced computer science student, aspires to navigate the <br>complexities of the
+                    digital world with unwavering curiosity and a<br>
+                    thirst for knowledge. <br>
+                    I am writing to express my interest in the Java Developer position <br>at Our Company.I am currently
+                    in the final year of my computer <br>science program with a strong foundation in: </b></p>
+            <div id="line">
+                <details>
+                    <summary>My Skill</summary>
+                    <ul>
+                        <details>
+                            <summary>programoing launguage</summary>
+                            <ul>
+                                <li>c c++</li>
+                                <li>java</li>
+                            </ul>
+                        </details>
+                        <details>
+                            <summary>Backend</summary>
+                            <ul>
+                                <li>node js</li>
+                                <li>java</li>
+                            </ul>
+                        </details>
+                        <details>
+                            <summary>Frontend</summary>
+                            <ul>
+                                <li>React js</li>
+                                <li>javascript</li>
+                                <li>CSS</li>
+                                <li>HTML</li>
+                            </ul>
+                        </details>
+                    </ul>
+                </details>
+                <details>
+                    <summary>programoing launguage</summary>
+                    <ul>
+                        <li>c c++</li>
+                        <li>java</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary>programoing launguage</summary>
+                    <ul>
+                        <li>c c++</li>
+                        <li>java</li>
+                    </ul>
+                </details>
+            </div>
+        </div>
+    </div>
+    <div id="service">
+        <h1 id="service1">my services</h1>
+    </div>
+    <div id="main-3">
+        <div id="box1">
+            <h1 id="coding" class="bi bi-code-slash"></h1>
+            <h1 id="hel">Web devlopment</h1>
+            <p id="hel">In Web Development We can Lean <br> Frontend Languages like HTML, CSS <br>javaScript and
+                javaScript Library Like React <br>And freamwork Angular View.JS.</p>
+            <h4><a href="#coding">lern more</a></h4>
+        </div>
+        <div id="box2">
+            <h1 id="coding" class="bi bi-github"></h1>
+            <h1 id="hel">version control <br>Tool-Git Hub</h1>
+            <p id="hel">On Git Hub We Can create our Own Repositories an also Create Host The Project</p>
+            <h4><a href="#coding">lern more</a></h4>
+        </div>
+        <div id="box3">
+            <h1 id="coding" class="bi bi-search"></h1>
+            <h1 id="hel">Web devlopment</h1>
+            <p id="hel">We Create our own Virual Assistant and <br>aslo make Chat-Al Application with help <br>Frontend
+                and Useing API</p>
+            <h4><a href="#coding">lern more</a></h4>
+        </div>
+    </div>
+    <h1 id="my-work">my work</h1>
+    <div id="mywork">
+        <div id="box4">
+            <img src="image/mywork-1.png" alt="pa">
+        </div>
+        <div id="box5">
+            <img src="image/mywork2.png" alt="">
+        </div>
+        <div id="box6">
+            <img src="image/mywork2.png" alt="">
+        </div>
+    </div>
+    <div id="main4">
+        <div id="main41">
+            <h1 id="Contact">Contact me</h1>
+            <i class="bi bi-envelope" id="email"></i><a href="mailto:yogeshkharat@82970gmail.com" id="hia"> yogeshkharat@82970gmail.com</a><br>
+            <i class="bi bi-telephone-fill" id="email"></i><a href="tel:8999978343" id="hia">call me +918999978343</a>
+            <div id="iconsf">
+                <li id="y1" class="bi bi-github"></li>
+                <li id="y2" class="bi bi-facebook"></li>
+                <li id="y3" class="bi bi-linkedin"></li>
+                <li id="y4" class="bi bi-instagram"></li>
+                <li id="y5" class="bi bi-youtube"></li>
+            </div>
+            <div id="dow"><a href="pdf/yogesh.pdf" download="download">download..</a></div>
+            
+        </div>
+        <div id="inputq">
+            <input type="text" id="username" placeholder="Your name "><br>
+            <input type="text" id="email1" placeholder="your email">
+            <textarea name="commemt " id="hu">your massage</textarea>
+            <button id="button1"><a href="#king">Submit</a></button>
+        </div>
+        
+    </div>
+   
+        
+</body>
+</html>
